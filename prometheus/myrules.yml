@@ -20,3 +20,5 @@ groups:
     - alert: AppLatencyAbove2sec
       expr: 2 < job:app_response_latency_seconds:rate1m < 5
       for: 2m
+      labels:
+        severity: warning
