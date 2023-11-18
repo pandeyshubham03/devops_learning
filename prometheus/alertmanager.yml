@@ -81,8 +81,10 @@ route:
 inhibit_rules:
 - source_match:
     severity: 'critical'
+    # which alert should be in the firing state
   target_match:
     severity: 'warning'
+    # if the source_match alert is fired then which alert should be inhibitted
   equal: ['app_type', 'category']
 
 receivers:
