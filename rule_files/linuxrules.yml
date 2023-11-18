@@ -15,7 +15,8 @@ groups:
     rules:
 
     - alert: NodeExporterDown
-      expr: up{job="node_exporter"} == 0
+      expr: up{job="node_exporter"} == 0 and on() 9 < hour() < 17
+      # Added the time above so that alerts are triggered only during office hours between 9 am and 5 pm
       for: 2m
       labels:
         severity: critical
