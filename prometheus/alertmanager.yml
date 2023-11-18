@@ -28,6 +28,7 @@ route:
       - match:
           severity: critical
         receiver: delivery-manager
+        continue: true # Routing process will continue and not stop once routing is matched
       - match:
           severity: warning
         receiver: linux-teamlead
