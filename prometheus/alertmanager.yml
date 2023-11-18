@@ -1,4 +1,5 @@
 global:
+  # Since this block is global so a prefix smtp is required. Otherwise it's not mentioned
   smtp_from: 'example@gmail.com'
   smtp_smarthost: smtp.gmail.com:587
   smtp_auth_username: 'example@gmail.com'
