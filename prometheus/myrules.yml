@@ -10,3 +10,9 @@ groups:
 
     - record: job:app_response_latency_seconds:rate1m
       expr: rate(app_response_latency_seconds_sum[1m]) / rate(app_response_latency_seconds_count[1m])
+
+    - alert: AppLatencyAbove5sec
+      expr: job:app_response_latency_seconds:rate1m >= 5
+      for: 2m
+      labels:
+        severity: critical
