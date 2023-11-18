@@ -6,3 +6,4 @@ groups:
 
     - alert: NodeExporterDown
       expr: up{job="node_exporter"} == 0
+      for: 1m
