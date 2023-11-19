@@ -118,8 +118,9 @@ receivers:
   - to: 'example@gmail.com'
 
 - name: windows-team-manager
-  email_configs:
-  - to: 'example@gmail.com'
+  slack_configs:
+  - channel: '#prometheus'
+    api_url: 'https://hooks.slack.com/services/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'
 
 - name: pec-admin
   email_configs:
