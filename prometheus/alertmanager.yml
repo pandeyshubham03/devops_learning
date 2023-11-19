@@ -6,6 +6,8 @@ global:
   smtp_auth_password: 'fqkvkumorgaqgkat'
   pagerduty_url: #Your url
 
+# Added pagerduty url above in global field
+
 route:
   # fallback receiver
   receiver: admin
