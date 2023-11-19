@@ -117,12 +117,14 @@ receivers:
   email_configs:
   - to: 'example@gmail.com'
 
+# Adding Slack Integration
 - name: windows-team-manager
   slack_configs:
   - channel: '#prometheus'
     api_url: 'https://hooks.slack.com/services/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'
     title: 'WMI exporter is down'
     text: 'WMI exporter is down for 2 minutes'
+
 - name: pec-admin
   email_configs:
   - to: 'example@gmail.com'
